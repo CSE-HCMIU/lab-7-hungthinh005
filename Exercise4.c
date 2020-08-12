@@ -44,7 +44,7 @@ void ex4(char s1[], char s2[]){
 
 int main(int argc, char *argv[]) {
 	char n1[] = "111";
-    char n2[] = "1111";
+    char n2[] = "11";
     ex4(n1,n2);
 		
 	return 0;
