@@ -36,15 +36,23 @@ void ex4(char s1[], char s2[]){
 	}
 	
 	d3 = d1 + d2;
-
+	
+	while (d3>0)
+	{	
+		rem = d3%2;
+		b3 = b3 + rem*j;
+		j = j*10;
+		d3 = d3/2;
+	}	
 	char s3[20];
-	itoa(d3,s3,2);
+	sprintf(s3,"%d",b3);
+	
 	printf("%s",s3);
 }
 
 int main(int argc, char *argv[]) {
 	char n1[] = "111";
-    char n2[] = "11";
+    char n2[] = "1111";
     ex4(n1,n2);
 		
 	return 0;
